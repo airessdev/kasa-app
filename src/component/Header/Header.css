@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  width: 95%;
+  justify-content: space-around;
+}
+nav {
+  gap: 40px;
+  display: inline-flex;
+}
+
+a:active {
+  text-decoration: underline !important;
+}
+a:link {
+  text-decoration: none;
+}
