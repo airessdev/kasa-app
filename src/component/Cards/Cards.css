@@ -1,0 +1,17 @@
+.Cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10%;
+}
+
+ul {
+  /* display: flex;
+  list-style: none; */
+}
+li {
+}
+.Cards img {
+  width: 33%;
+}

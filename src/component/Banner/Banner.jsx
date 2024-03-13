@@ -1,11 +1,14 @@
 import "./Banner.css";
 
 const Banner = ({ backImg, text }) => {
-    const style = {
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.2)), url(${backImg})`,
+    const myStyle = {
+        backgroundImage: `url(${backImg})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
     };
     return (
-        <div className="Banner" style={style}>
+        <div className="Banner" style={myStyle}>
             <h1>{text}</h1>
         </div>
     );
