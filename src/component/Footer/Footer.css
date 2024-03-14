@@ -1,5 +1,7 @@
 .footer {
   height: 209px;
+  width: 1440px;
+  padding: 0px;
   background-color: black;
   display: flex;
   justify-content: center;

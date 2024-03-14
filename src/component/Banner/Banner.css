@@ -1,4 +1,12 @@
-.Banner {
+.banner {
+  border: 1px solid black;
+  border-radius: 25px;
   display: flex;
+  align-items: center;
   justify-content: center;
+  height: 223px;
+  width: 1240px;
+}
+.banner h1 {
+  color: white;
 }

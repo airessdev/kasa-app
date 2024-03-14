@@ -21,7 +21,7 @@ return (
         />
         <Banner
             backImg={bannerBack}
-            text={'Chez vous ,partout et ailleurs'}
+            
         />
         <div className="cards-container">
           {CardsData.map((elementCard) => (
