@@ -1,16 +1,20 @@
-import './Cards.css'
 
+import { Link } from "react-router-dom";
+import "./Cards.css";
 
-const Cards = (elementCard) => {
+const Cards = ({ elementCards }) => {
     return (
+        <article key={elementCards.id} className="card">
+            <Link to={`/logement/${elementCards.id}`} className="card-link">
+                <div className="img-container">
+                    <img src={elementCards.cover} alt={elementCards.title} />
+                </div>
+                <div className="card-title">
+                    <h2>{elementCards.title}</h2>
+                </div>
+            </Link>
+        </article>
+    );
+};
 
-        <div className='Cards'>
-            <img src={'$elementCard.img'} alt='$elementCard.title' />
-            <h3>{elementCard.title}</h3>
-            <p>{elementCard.text}</p>
-        </div>
-
-    )
-}
-
-export default Cards
+export default Cards;

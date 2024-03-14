@@ -5,6 +5,9 @@ import Header from '../../component/Header/Header'
 import Banner from '../../component/Banner/Banner'
 import Cards from '../../component/Cards/Cards'
 import CardsData from '../../json/logements.json'
+import Footer from '../../component/Footer/Footer'
+
+
 
 
 
@@ -20,22 +23,25 @@ return (
             backImg={bannerBack}
             text={'Chez vous ,partout et ailleurs'}
         />
-        <div className='Cards-container'>
+        <div className="cards-container">
+          {CardsData.map((elementCard) => (
+            <Cards key={elementCard.id} elementCards={elementCard} />
+          ))}
+        </div>
+        <div>
+        <Footer />
             
-            {CardsData.map(CardsData=>
-            <Cards
-                img={CardsData.img}
-                title={CardsData.title}
-                text={CardsData.text}
-            />
+        </div>
+            
         
-        )}
+        
+    
             
-            
+         
          </div>
-         </div>
+         )}
 
-)}
+
     
 
 
