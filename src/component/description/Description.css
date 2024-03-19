@@ -23,7 +23,22 @@
   height: 64px;
   border-radius: 100%;
 }
-.hostandpicture{
-    display: flex;
-    flex-direction: row;
+.hostandpicture {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.hostandpicture p {
+  margin: 0px;
+  padding: 0px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+
+  color: #ff6060;
+}
+.description-city {
+  padding: 0px;
+  margin: 0px;
 }

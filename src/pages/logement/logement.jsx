@@ -5,6 +5,7 @@ import Slider from "../../component/Slider/Slider"
 import { useParams } from "react-router-dom"
 import data from "../../json/logements.json"
 import Description from "../../component/description/Description"
+import Badges from "../../component/Badges/Badges"
 
 
 const Logement = () => {
@@ -18,9 +19,14 @@ const Logement = () => {
                 id={idElement}
 
             />
-            <Description 
-                id={idElement}
-            />
+            <div>
+                <Description
+                    id={idElement}
+                />
+                <Badges
+                    id={idElement}
+                />
+            </div>
         </div>
     )
 }

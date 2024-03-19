@@ -50,8 +50,12 @@ const Description = (id) => {
     return (
         <div className="description-container">
             <div className='description'>
+            <div className='description-left'>
 
                 <p className='description-title'>{logement.title}</p>
+                <p className='description-city'>{logement.location}</p>
+            </div>
+            <div className='descritption-right'>
                 <div className='hostandpicture'>
                     <div >
                         <p className='description-hostname'>{first}</p>
@@ -59,9 +63,10 @@ const Description = (id) => {
                     </div>
                     <img className='description-hostimage' src={logement.host.picture} alt='host image' ></img>
                 </div>
-
             </div>
 
+            </div>
+            
 
         </div>
 
