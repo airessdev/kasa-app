@@ -1,0 +1,29 @@
+.description-container {
+  display: flex;
+  flex-direction: column;
+}
+.description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.description-title {
+  margin: 0px;
+  padding: 0px;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 51px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ff6060;
+}
+.description-hostimage {
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+}
+.hostandpicture{
+    display: flex;
+    flex-direction: row;
+}
