@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom"
 import data from "../../json/logements.json"
 import Description from "../../component/description/Description"
 import Badges from "../../component/Badges/Badges"
+import Stars from "../../component/Stars/Stars"
 
 
 const Logement = () => {
@@ -19,13 +20,18 @@ const Logement = () => {
                 id={idElement}
 
             />
-            <div>
+            <div className="description-wrap">
                 <Description
                     id={idElement}
                 />
-                <Badges
-                    id={idElement}
-                />
+                <div className="badges-stars">
+                    <Badges
+                        id={idElement}
+                    />
+                    <Stars
+                        id={idElement}
+                    />
+                </div>
             </div>
         </div>
     )

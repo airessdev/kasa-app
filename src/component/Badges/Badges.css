@@ -3,13 +3,14 @@
   padding-top: 10px;
   margin: 0px;
   display: flex;
+  gap: 5px;
 }
 .badge {
   padding: 0px;
   margin: 0px;
   display: inline-flex;
   color: #fff;
-  width: 115px;
+
   height: 25px;
   border-radius: 10px;
   background-color: #ff6060;
@@ -18,4 +19,6 @@
   font-weight: 700;
   line-height: 19.96px;
   justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }

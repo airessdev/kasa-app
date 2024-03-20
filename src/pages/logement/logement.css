@@ -6,3 +6,12 @@
   justify-content: center;
   padding: 45px;
 }
+.description-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.badges-stars {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
