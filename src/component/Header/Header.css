@@ -1,16 +1,37 @@
 .header {
   display: flex;
-  width: 95%;
-  justify-content: space-around;
+  width: 90%;
+  justify-content: space-between;
 }
 nav {
   gap: 40px;
   display: inline-flex;
+  align-items: center;
+}
+nav a {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
 }
 
-a:active {
-  text-decoration: underline !important;
-}
 a:link {
+  color: blue;
   text-decoration: none;
+} /* Liens non visités */
+a:visited {
+  text-decoration: none;
+  color: black;
+} /* Liens visités */
+a:active {
+  text-decoration: underline;
+  color: black;
+}
+a:focus {
+  text-decoration: underline;
+  color: black;
+}
+a:target {
+  text-decoration: underline;
+  color: black;
 }

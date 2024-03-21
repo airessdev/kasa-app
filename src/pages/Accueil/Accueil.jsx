@@ -14,35 +14,36 @@ import Footer from '../../component/Footer/Footer'
 
 const Accueil = () => {
 
-return (
+  return (
     <div className="accueil">
-        <Header
-            sourceLogo={LOGO}
-        />
-        <Banner
-            backImg={bannerBack}
-            
-        />
-        <div className="cards-container">
-          {CardsData.map((elementCard) => (
-            <Cards key={elementCard.id} elementCards={elementCard} />
-          ))}
-        </div>
-        <div>
-        <Footer />
-            
-        </div>
-            
-        
-        
-    
-            
-         
-         </div>
-         )}
+      <Header
+        sourceLogo={LOGO}
+      />
+      <Banner
+        backImg={bannerBack}
+
+      />
+      <div className="cards-container">
+        {CardsData.map((elementCard) => (
+          <Cards key={elementCard.id} elementCards={elementCard} />
+        ))}
+      </div>
+
+      <Footer />
 
 
-    
+
+
+
+
+
+
+    </div>
+  )
+}
+
+
+
 
 
 
